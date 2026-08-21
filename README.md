@@ -1,18 +1,24 @@
-# Xinyao27 Tap
+# Homebrew tap for Atat
 
-## How do I install these formulae?
+[Atat](https://atatapp.com/) is a native macOS command palette for using
+terminal AI agents from any app.
 
-`brew install xinyao27/tap/<formula>`
+## Install
 
-Or `brew tap xinyao27/tap` and then `brew install <formula>`.
+```bash
+brew install --cask xinyao27/tap/atat
+```
 
-Or, in a `brew bundle` `Brewfile`:
+Or tap the repository first and use the short cask name:
+
+```bash
+brew tap xinyao27/tap
+brew install --cask atat
+```
+
+In a `Brewfile`:
 
 ```ruby
 tap "xinyao27/tap"
-brew "<formula>"
+cask "atat"
 ```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
