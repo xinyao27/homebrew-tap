@@ -1,9 +1,9 @@
 cask "atat" do
-  version "0.5.0"
-  sha256 "d6487294bf72087338a7f7266e20e7e967c4ee10a33e418fff0f137bdba68f2d"
+  version "0.9.0"
+  sha256 "ab2ba53c466dd93086810feeeb2b03427eed49f7a5e546c3f746adcbacaf05c8"
 
-  url "https://updates.atatapp.com/releases/#{version}/Atat-#{version}.dmg"
-  name "Atat"
+  url "https://updates.atatapp.com/releases/#{version}/AtAt-#{version}.dmg"
+  name "AtAt"
   desc "Command palette for using terminal AI agents from any app"
   homepage "https://atatapp.com/"
 
@@ -13,14 +13,15 @@ cask "atat" do
   end
 
   auto_updates true
+  depends_on arch: :arm64
   depends_on macos: :tahoe
 
-  app "Atat.app"
+  app "AtAt.app"
 
   uninstall quit: "com.atat.app"
 
   zap trash: [
-    "~/Library/Application Support/Atat",
+    "~/Library/Application Support/AtAt",
     "~/Library/Preferences/com.atat.app.plist",
   ]
 end
