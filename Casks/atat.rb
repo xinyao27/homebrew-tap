@@ -1,6 +1,6 @@
 cask "atat" do
-  version "1.0.2"
-  sha256 "51979f3accc4dfe4f2287250a951a8fe58b3f27a23d97f0793c153f98f492a89"
+  version "1.1.0"
+  sha256 "14609fce44ed241122128b8c9bffb7a6daa97ae837663e6ebebb6233c6e60914"
 
   url "https://updates.atatapp.com/releases/#{version}/AtAt-#{version}.dmg"
   name "AtAt"
@@ -14,7 +14,7 @@ cask "atat" do
 
   auto_updates true
   depends_on arch: :arm64
-  depends_on macos: :tahoe
+  depends_on macos: :sequoia
 
   app "AtAt.app"
 
