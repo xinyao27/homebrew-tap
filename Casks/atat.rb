@@ -1,6 +1,6 @@
 cask "atat" do
-  version "2.3.2"
-  sha256 "506ff0a350aff6c912692e5016b0e9b65b847787fb6ede7bd13c141f62df2edd"
+  version "2.3.3"
+  sha256 "5f8615acd420ca7820d9f560d8f78db6790c68916356b4079e6620469947e01b"
 
   url "https://updates.atatapp.com/releases/#{version}/AtAt-#{version}.dmg"
   name "AtAt"
