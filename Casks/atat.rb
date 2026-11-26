@@ -9,7 +9,9 @@ cask "atat" do
 
   livecheck do
     url "https://updates.atatapp.com/appcast.xml"
-    strategy :sparkle, &:short_version
+    strategy :sparkle do |items|
+      items.find { |item| item.channel.nil? }&.short_version
+    end
   end
 
   auto_updates true
